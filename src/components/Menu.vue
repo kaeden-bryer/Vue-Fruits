@@ -1,22 +1,27 @@
 <script setup lang="ts">
 import MenuItem from './MenuItem.vue'
+import data from '../data.json'
+
+const emit = defineEmits<{
+  (e: 'item-clicked', data: { name: string, description: string, image: string }): void
+}>()
+
+const handleItemClick = (itemData: { name: string, description: string, image: string }) => {
+  emit('item-clicked', itemData)
+}
 </script>
 
 <template>
-    <h1>Menu</h1>
+    <h1>Fruits Menu!🍉</h1>
     <div class="menu">
-        <MenuItem image="/apple.avif" bgColor="red"/>
-        <MenuItem image="/banana.avif" bgColor="lightblue"/>
-        <MenuItem image="/blueberry.avif" bgColor="blue"/>
-        <MenuItem image="/coconut.avif" bgColor="brown"/>
-        <MenuItem image="/grapefruit.avif" bgColor="orange"/>
-        <MenuItem image="/lemon.avif" bgColor="yellow"/>
-        <MenuItem image="/papaya.avif" bgColor="orange"/>
-        <MenuItem image="/pineapple.avif" bgColor="yellow"/>
-        <MenuItem image="/pomegranate.avif" bgColor="red"/>
-        <MenuItem image="/raspberry.avif" bgColor="red"/>
-        <MenuItem image="/kiwi.avif" bgColor="green"/>
-        <MenuItem image="/watermelon.avif" bgColor="green"/>
+      <MenuItem
+        v-for="fruit in data" :key="fruit.name"
+        :image="fruit.image"
+        :name="fruit.name"
+        :description="fruit.description"
+        :bgColor="fruit.bgColor"
+        @item-clicked="handleItemClick"
+      />
     </div>
 </template>
 

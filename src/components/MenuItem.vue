@@ -1,13 +1,27 @@
 <script setup lang="ts">
 
-defineProps<{
+const props = defineProps<{
     image: string,
+    name: string,
+    description: string,
     bgColor: string
 }>()
+
+const emit = defineEmits<{
+  (e: 'item-clicked', data: { name: string, description: string, image: string }): void
+}>()
+
+const handleClick = () => {
+  emit('item-clicked', {
+    name: props.name,
+    description: props.description,
+    image: props.image
+  })
+}
 </script>
 
 <template>
-    <img :src="image" :style="{ '--color': bgColor }" class="menu-item" />
+    <img :src="image" :style="{ '--color': bgColor }" class="menu-item" @click="handleClick" />
 </template>
 
 <style scoped>

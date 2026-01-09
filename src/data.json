@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Apple",
+        "description": "A sweet red fruit",
+        "image": "/apple.avif",
+        "bgColor": "red"
+    },
+    {
+        "name": "Banana",
+        "description": "A long yellow fruit",
+        "image": "/banana.avif",
+        "bgColor": "lightblue"
+    },
+    {
+        "name": "Blueberry",
+        "description": "A small blue fruit",
+        "image": "/blueberry.avif",
+        "bgColor": "purple"
+    },
+    {
+        "name": "Cherry",
+        "description": "A small red fruit",
+        "image": "/cherry.avif",
+        "bgColor": "red"
+    },
+    {
+        "name": "Coconut",
+        "description": "A hardy brown fruit",
+        "image": "/coconut.avif",
+        "bgColor": "lightblue"
+    },
+    {
+        "name": "Grapefruit",
+        "description": "A large bitter citrus",
+        "image": "/grapefruit.avif",
+        "bgColor": "red"
+    },
+    {
+        "name": "Kiwi",
+        "description": "A person from New Zealand",
+        "image": "/kiwi.avif",
+        "bgColor": "green"
+    },
+    {
+        "name": "Lemon",
+        "description": "A sour yellow fruit",
+        "image": "/lemon.avif",
+        "bgColor": "yellow"
+    },
+    {
+        "name": "Lime",
+        "description": "A sour green fruit",
+        "image": "/lime.avif",
+        "bgColor": "red"
+    },
+    {
+        "name": "Papaya",
+        "description": "A funny tropical fruit",
+        "image": "/papaya.avif",
+        "bgColor": "lightblue"
+    },
+    {
+        "name": "Pineapple",
+        "description": "A spiky tropical fruit",
+        "image": "/pineapple.avif",
+        "bgColor": "orange"
+    },
+    {
+        "name": "Watermelon",
+        "description": "A large green fruit with red flesh",
+        "image": "/watermelon.avif",
+        "bgColor": "red"
+    }
+]
