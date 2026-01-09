@@ -19,8 +19,8 @@ const closeItemDescription = () => {
 
 <template>
   <Menu @item-clicked="handleItemClick" />
-  <div class="item-description-container" v-if="toggleItemDescription && selectedItem">
-    <div class="item-description-overlay" @click="closeItemDescription"></div>
+  <div class="item-description-container" v-if="toggleItemDescription && selectedItem" @click="closeItemDescription">
+    <div class="item-description-overlay"></div>
     <ItemDescription 
       :name="selectedItem.name"
       :description="selectedItem.description"
