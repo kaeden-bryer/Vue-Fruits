@@ -12,7 +12,7 @@ const handleItemClick = (itemData: { name: string, description: string, image: s
 </script>
 
 <template>
-    <h1>Fruits Menu!🍉</h1>
+    <h1>Fruits Basket!🍉</h1>
     <div class="menu">
       <MenuItem
         v-for="fruit in data" :key="fruit.name"
